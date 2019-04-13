@@ -1,0 +1,22 @@
+{
+  "name": "Molodin",
+  "version": "1.0.0",
+  "description": "Molodin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aleksandr Molodin",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-sass": "^3.2.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-util": "^3.0.7",
+    "node-gyp": "^3.6.2"
+  }
+}
