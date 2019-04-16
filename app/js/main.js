@@ -25,6 +25,41 @@ $(document).ready(function () {
     smartSpeed: 1000
   });
 
+  $('.category-one-carousel').owlCarousel({
+    loop: 0,
+    items: 3,
+    margin: 30,
+    nav: 0,
+    navText: '',
+    dots: 0,
+    smartSpeed: 1000,
+    responsive: {
+      0: {
+        items: 1,
+        nav: 1,
+      },
+      640: {
+        items: 2,
+        nav: 1,
+      },
+      960: {
+        items: 3
+      }
+    }
+  });
+
+  $('.header-main-nav-btn').on('click', function(e) {
+    $('.header-main-nav').toggleClass('on');
+    e.preventDefault();
+  });
+
+  $('.header-main-nav > li > a').on('click', function(e) {
+    $('.header-main-nav-show').removeClass('on');
+    $(this).next('.header-main-nav-show').addClass('on');
+    $(this).addClass('on');
+    e.preventDefault();
+  });
+
   // Hero item height (first img)
   // var heroHeight = $('.hero-carousel .item img').height();
   // $('.hero-carousel .item').css('height', heroHeight);

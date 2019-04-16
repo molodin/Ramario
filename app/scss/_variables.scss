@@ -190,10 +190,10 @@ $paragraph-margin-bottom:   1rem !default;
 
 $grid-breakpoints: (
   xs: 0,
-  sm: 641px,
-  md: 961px,
-  lg: 1281px,
-  xl: 1611px,
+  sm: 640px,
+  md: 960px,
+  lg: 1280px,
+  xl: 1610px,
 ) !default;
 
 @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
