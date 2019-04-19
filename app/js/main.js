@@ -151,22 +151,6 @@ $(document).ready(function () {
     };
   });
 
-  $(".basket-info").stick_in_parent({
-    offset_top: 40
-  });
-
-  var myMap;
-  ymaps.ready(init);
-  function init() {
-    myMap = new ymaps.Map('map', {
-      center: [55.76, 37.64],
-      zoom: 12,
-      controls: []
-    }, {
-      searchControlProvider: 'yandex#search'
-    });
-  }
-
   $(window).on('resize load', function () {
     if (window.matchMedia('(max-width: 1279px)').matches) {
       $('.catalog-wrap').before($('.filter-catalog'));
@@ -200,5 +184,21 @@ $(document).ready(function () {
       });
     };
   });
+
+  $(".basket-info").stick_in_parent({
+    offset_top: 40
+  });
+
+  var myMap;
+  ymaps.ready(init);
+  function init() {
+    myMap = new ymaps.Map('map', {
+      center: [55.76, 37.64],
+      zoom: 12,
+      controls: []
+    }, {
+      searchControlProvider: 'yandex#search'
+    });
+  };
 
 });
