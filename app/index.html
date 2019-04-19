@@ -10,6 +10,8 @@
 	<link rel="stylesheet" href="css/bootstrap-grid.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Lora:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900&amp;subset=cyrillic"
@@ -141,179 +143,522 @@
 				</div>
 			</div>
 		</header>
-		<section class="hero">
-			<div class="hero-carousel owl-carousel">
-				<div class="item">
-					<div class="row">
-						<div class="col-md-4 d-md-block d-sm-none d-block">
-							<a href="">
-								<span>#пример фото</span>
-								<img src="img/hero-img-1.jpg" alt="">
-							</a>
-						</div>
-						<div class="col-md-8 col-sm-12 d-sm-block d-none">
-							<a href="">
-								<span class="hashright">#пример фото</span>
-								<img src="img/hero-img-2.jpg" alt="">
-							</a>
+		<div class="top-carousel owl-carousel">
+			<a href="" class="item">
+				<img src="img/top-carousel-1.jpg" alt="">
+			</a>
+			<a href="" class="item">
+				<img src="img/top-carousel-1.jpg" alt="">
+			</a>
+			<a href="" class="item">
+				<img src="img/top-carousel-1.jpg" alt="">
+			</a>
+			<a href="" class="item">
+				<img src="img/top-carousel-1.jpg" alt="">
+			</a>
+			<a href="" class="item">
+				<img src="img/top-carousel-1.jpg" alt="">
+			</a>
+			<a href="" class="item">
+				<img src="img/top-carousel-1.jpg" alt="">
+			</a>
+			<a href="" class="item">
+				<img src="img/top-carousel-1.jpg" alt="">
+			</a>
+		</div>
+		<div class="row catalog-wrap">
+			<div class="col-lg-3">
+				<div class="forFilterCatalogBefore"></div>
+				<div class="filter-catalog on">
+					<div class="filter-catalog-close"></div>
+					<div class="item">
+						<a href="" class="item-btn">
+							<h4>категории</h4>
+						</a>
+						<div class="item-wrap">
+							<ul>
+								<li><a href="">Браслеты</a></li>
+								<li><a href="">Бабочки</a></li>
+								<li><a href="">Очки</a></li>
+								<li><a href="">Ремни</a></li>
+								<li><a href="">Рубашки</a></li>
+								<li><a href="">Штаны</a></li>
+								<li><a href="">Аксессуары</a></li>
+								<li><a href="" class="active">Все</a></li>
+							</ul>
 						</div>
 					</div>
+					<div class="item">
+						<a href="" class="item-btn">
+							<h4>Стоимость</h4>
+						</a>
+						<div class="item-wrap">
+							<form action="">
+								<input type="text" placeholder="от 199">
+								<input type="text" placeholder="до 5990">
+							</form>
+						</div>
+					</div>
+					<div class="item">
+						<a href="" class="item-btn">
+							<h4>Цвет</h4>
+						</a>
+						<div class="item-wrap">
+							<ul>
+								<li>
+									<input type="checkbox" value="color1" class="checkbox-w" id="white">
+									<label for="white">Белый</label>
+								</li>
+								<li>
+									<input type="checkbox" value="color" class="checkbox-w" id="black">
+									<label for="black">Черный</label>
+								</li>
+								<li>
+									<input type="checkbox" value="color" class="checkbox-w" id="black">
+									<label for="black">Оранжевый</label>
+								</li>
+								<li>
+									<input type="checkbox" value="color" class="checkbox-w" id="black">
+									<label for="black">Красный</label>
+								</li>
+								<li>
+									<input type="checkbox" value="color" class="checkbox-w" id="black">
+									<label for="black">Зеленый</label>
+								</li>
+								<li>
+									<input type="checkbox" value="color" class="checkbox-w" id="black">
+									<label for="black">Синий</label>
+								</li>
+								<li>
+									<input type="checkbox" value="color" class="checkbox-w" id="black">
+									<label for="black">Хаки</label>
+								</li>
+								<li>
+									<input type="checkbox" value="color" class="checkbox-w" id="black">
+									<label for="black">Мульти</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="item">
+						<a href="" class="item-btn">
+							<h4>свернутый раздел #4</h4>
+						</a>
+						<div class="item-wrap">
+							4
+						</div>
+					</div>
+					<div class="item">
+						<a href="" class="item-btn">
+							<h4>свернутый раздел #5</h4>
+						</a>
+						<div class="item-wrap">
+							5
+						</div>
+					</div>
+					<div class="item">
+						<a href="" class="item-btn">
+							<h4>свернутый раздел #5</h4>
+						</a>
+						<div class="item-wrap">
+							6
+						</div>
+					</div>
+					<a href="" class="btn btn-black btn-primary"><span>применить фильтры</span></a>
+					<a href="" class="btn btn-black"><span>очистить фильтры</span></a>
 				</div>
-				<div class="item">
-						<div class="row">
-							<div class="col-md-4 d-md-block d-sm-none d-block">
-								<a href="">
-									<span>#пример фото</span>
-									<img src="img/hero-img-1.jpg" alt="">
-								</a>
+			</div>
+			<div class="col-lg-8 offset-lg-1">
+				<div class="catalog">
+					<ul class="breadcrumbs">
+						<li><a href="">Главная</a></li>
+						<li><a href="">Для мужчин</a></li>
+					</ul>
+					<h3 class="title">для мужчин</h3>
+					<div class="sort">
+						<div class="filter-show">
+							<i class="fa fa-sliders" aria-hidden="true"></i>
+						</div>
+						<h4>сортировать по</h4>
+						<select name="select-custom-sort" id="select-custom-sort" class="select-custom">
+							<option selected>Возрастанию цены</option>
+							<option>По популярности</option>
+							<option>По уменьшению цены</option>
+							<option>По размеру скидки</option>
+							<option>По новизне</option>
+						</select>
+					</div>
+					<div class="row">
+						<div class="col-xl-3 col-md-4 col-sm-6">
+							<div class="card-custom">
+								<div class="card-custom-img">
+									<a href="" class="btn-wish"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+									<ul>
+										<li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+										<li><a href=""><i class="fa fa-hand-o-up" aria-hidden="true"></i></a></li>
+										<li><a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+									</ul>
+									<img src="img/card-1.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="card-custom-text">
+									<p>Пиджак темный</p>
+									<div class="price-new">
+										<span>1200 руб</span>
+										<h5>900 руб</h5>
+									</div>
+									<div class="card-size">
+										<h6>Размеры</h6>
+										<p><span>XS</span> <span>S</span> <span>M</span> <span>L</span> <span>XL</span> <span>XXL</span>
+										</p>
+									</div>
+								</div>
+								<ul class="card-custom-color">
+									<li class="card-custom-color-black" title="Черный"></li>
+									<li class="card-custom-color-blue" title="Синий"></li>
+									<li class="card-custom-color-pink" title="Розовый"></li>
+								</ul>
 							</div>
-							<div class="col-md-8 col-sm-12 d-sm-block d-none">
-								<a href="">
-									<span class="hashright">#пример фото</span>
-									<img src="img/hero-img-2.jpg" alt="">
-								</a>
+						</div>
+						<div class="col-xl-3 col-md-4 col-sm-6">
+							<div class="card-custom">
+								<div class="card-custom-img">
+									<a href="" class="btn-wish"><i class="fa fa-heart" aria-hidden="true"></i></a>
+									<ul>
+										<li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+										<li><a href=""><i class="fa fa-hand-o-up" aria-hidden="true"></i></a></li>
+										<li><a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+									</ul>
+									<img src="img/card-1.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="card-custom-text">
+									<p>Пиджак темный</p>
+									<h5>1400 руб</h5>
+									<div class="card-size">
+										<h6>Размеры</h6>
+										<p><span>XS</span> <span>S</span> <span>M</span> <span>L</span> <span>XL</span> <span>XXL</span>
+										</p>
+									</div>
+								</div>
+								<ul class="card-custom-color">
+									<li class="card-custom-color-black" title="Черный"></li>
+									<li class="card-custom-color-blue" title="Синий"></li>
+									<li class="card-custom-color-pink" title="Розовый"></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xl-3 col-md-4 col-sm-6">
+							<div class="card-custom">
+								<div class="card-custom-img">
+									<a href="" class="btn-wish"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+									<ul>
+										<li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+										<li><a href=""><i class="fa fa-hand-o-up" aria-hidden="true"></i></a></li>
+										<li><a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+									</ul>
+									<img src="img/card-1.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="card-custom-text">
+									<p>Пиджак темный</p>
+									<div class="price-new">
+										<span>1200 руб</span>
+										<h5>900 руб</h5>
+									</div>
+									<div class="card-size">
+										<h6>Размеры</h6>
+										<p><span>XS</span> <span>S</span> <span>M</span> <span>L</span> <span>XL</span> <span>XXL</span>
+										</p>
+									</div>
+								</div>
+								<ul class="card-custom-color">
+									<li class="card-custom-color-black" title="Черный"></li>
+									<li class="card-custom-color-blue" title="Синий"></li>
+									<li class="card-custom-color-pink" title="Розовый"></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xl-3 col-md-4 col-sm-6">
+							<div class="card-custom">
+								<div class="card-custom-img">
+									<a href="" class="btn-wish"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+									<ul>
+										<li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+										<li><a href=""><i class="fa fa-hand-o-up" aria-hidden="true"></i></a></li>
+										<li><a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+									</ul>
+									<img src="img/card-1.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="card-custom-text">
+									<p>Пиджак темный</p>
+									<div class="price-new">
+										<span>1200 руб</span>
+										<h5>900 руб</h5>
+									</div>
+									<div class="card-size">
+										<h6>Размеры</h6>
+										<p><span>XS</span> <span>S</span> <span>M</span> <span>L</span> <span>XL</span> <span>XXL</span>
+										</p>
+									</div>
+								</div>
+								<ul class="card-custom-color">
+									<li class="card-custom-color-black" title="Черный"></li>
+									<li class="card-custom-color-blue" title="Синий"></li>
+									<li class="card-custom-color-pink" title="Розовый"></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xl-3 col-md-4 col-sm-6">
+							<div class="card-custom">
+								<div class="card-custom-img">
+									<a href="" class="btn-wish"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+									<ul>
+										<li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+										<li><a href=""><i class="fa fa-hand-o-up" aria-hidden="true"></i></a></li>
+										<li><a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+									</ul>
+									<img src="img/card-1.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="card-custom-text">
+									<p>Пиджак темный</p>
+									<div class="price-new">
+										<span>1200 руб</span>
+										<h5>900 руб</h5>
+									</div>
+									<div class="card-size">
+										<h6>Размеры</h6>
+										<p><span>XS</span> <span>S</span> <span>M</span> <span>L</span> <span>XL</span> <span>XXL</span>
+										</p>
+									</div>
+								</div>
+								<ul class="card-custom-color">
+									<li class="card-custom-color-black" title="Черный"></li>
+									<li class="card-custom-color-blue" title="Синий"></li>
+									<li class="card-custom-color-pink" title="Розовый"></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xl-3 col-md-4 col-sm-6">
+							<div class="card-custom">
+								<div class="card-custom-img">
+									<a href="" class="btn-wish"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+									<ul>
+										<li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+										<li><a href=""><i class="fa fa-hand-o-up" aria-hidden="true"></i></a></li>
+										<li><a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+									</ul>
+									<img src="img/card-1.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="card-custom-text">
+									<p>Пиджак темный</p>
+									<div class="price-new">
+										<span>1200 руб</span>
+										<h5>900 руб</h5>
+									</div>
+									<div class="card-size">
+										<h6>Размеры</h6>
+										<p><span>XS</span> <span>S</span> <span>M</span> <span>L</span> <span>XL</span> <span>XXL</span>
+										</p>
+									</div>
+								</div>
+								<ul class="card-custom-color">
+									<li class="card-custom-color-black" title="Черный"></li>
+									<li class="card-custom-color-blue" title="Синий"></li>
+									<li class="card-custom-color-pink" title="Розовый"></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xl-3 col-md-4 col-sm-6">
+							<div class="card-custom">
+								<div class="card-custom-img">
+									<a href="" class="btn-wish"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+									<ul>
+										<li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+										<li><a href=""><i class="fa fa-hand-o-up" aria-hidden="true"></i></a></li>
+										<li><a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+									</ul>
+									<img src="img/card-1.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="card-custom-text">
+									<p>Пиджак темный</p>
+									<div class="price-new">
+										<span>1200 руб</span>
+										<h5>900 руб</h5>
+									</div>
+									<div class="card-size">
+										<h6>Размеры</h6>
+										<p><span>XS</span> <span>S</span> <span>M</span> <span>L</span> <span>XL</span> <span>XXL</span>
+										</p>
+									</div>
+								</div>
+								<ul class="card-custom-color">
+									<li class="card-custom-color-black" title="Черный"></li>
+									<li class="card-custom-color-blue" title="Синий"></li>
+									<li class="card-custom-color-pink" title="Розовый"></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xl-3 col-md-4 col-sm-6">
+							<div class="card-custom">
+								<div class="card-custom-img">
+									<a href="" class="btn-wish"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+									<ul>
+										<li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+										<li><a href=""><i class="fa fa-hand-o-up" aria-hidden="true"></i></a></li>
+										<li><a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+									</ul>
+									<img src="img/card-1.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="card-custom-text">
+									<p>Пиджак темный</p>
+									<div class="price-new">
+										<span>1200 руб</span>
+										<h5>900 руб</h5>
+									</div>
+									<div class="card-size">
+										<h6>Размеры</h6>
+										<p><span>XS</span> <span>S</span> <span>M</span> <span>L</span> <span>XL</span> <span>XXL</span>
+										</p>
+									</div>
+								</div>
+								<ul class="card-custom-color">
+									<li class="card-custom-color-black" title="Черный"></li>
+									<li class="card-custom-color-blue" title="Синий"></li>
+									<li class="card-custom-color-pink" title="Розовый"></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xl-3 col-md-4 col-sm-6">
+							<div class="card-custom">
+								<div class="card-custom-img">
+									<a href="" class="btn-wish"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+									<ul>
+										<li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+										<li><a href=""><i class="fa fa-hand-o-up" aria-hidden="true"></i></a></li>
+										<li><a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+									</ul>
+									<img src="img/card-1.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="card-custom-text">
+									<p>Пиджак темный</p>
+									<div class="price-new">
+										<span>1200 руб</span>
+										<h5>900 руб</h5>
+									</div>
+									<div class="card-size">
+										<h6>Размеры</h6>
+										<p><span>XS</span> <span>S</span> <span>M</span> <span>L</span> <span>XL</span> <span>XXL</span>
+										</p>
+									</div>
+								</div>
+								<ul class="card-custom-color">
+									<li class="card-custom-color-black" title="Черный"></li>
+									<li class="card-custom-color-blue" title="Синий"></li>
+									<li class="card-custom-color-pink" title="Розовый"></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xl-3 col-md-4 col-sm-6">
+							<div class="card-custom">
+								<div class="card-custom-img">
+									<a href="" class="btn-wish"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+									<ul>
+										<li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+										<li><a href=""><i class="fa fa-hand-o-up" aria-hidden="true"></i></a></li>
+										<li><a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+									</ul>
+									<img src="img/card-1.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="card-custom-text">
+									<p>Пиджак темный</p>
+									<div class="price-new">
+										<span>1200 руб</span>
+										<h5>900 руб</h5>
+									</div>
+									<div class="card-size">
+										<h6>Размеры</h6>
+										<p><span>XS</span> <span>S</span> <span>M</span> <span>L</span> <span>XL</span> <span>XXL</span>
+										</p>
+									</div>
+								</div>
+								<ul class="card-custom-color">
+									<li class="card-custom-color-black" title="Черный"></li>
+									<li class="card-custom-color-blue" title="Синий"></li>
+									<li class="card-custom-color-pink" title="Розовый"></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xl-3 col-md-4 col-sm-6">
+							<div class="card-custom">
+								<div class="card-custom-img">
+									<a href="" class="btn-wish"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+									<ul>
+										<li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+										<li><a href=""><i class="fa fa-hand-o-up" aria-hidden="true"></i></a></li>
+										<li><a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+									</ul>
+									<img src="img/card-1.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="card-custom-text">
+									<p>Пиджак темный</p>
+									<div class="price-new">
+										<span>1200 руб</span>
+										<h5>900 руб</h5>
+									</div>
+									<div class="card-size">
+										<h6>Размеры</h6>
+										<p><span>XS</span> <span>S</span> <span>M</span> <span>L</span> <span>XL</span> <span>XXL</span>
+										</p>
+									</div>
+								</div>
+								<ul class="card-custom-color">
+									<li class="card-custom-color-black" title="Черный"></li>
+									<li class="card-custom-color-blue" title="Синий"></li>
+									<li class="card-custom-color-pink" title="Розовый"></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xl-3 col-md-4 col-sm-6">
+							<div class="card-custom">
+								<div class="card-custom-img">
+									<a href="" class="btn-wish"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+									<ul>
+										<li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+										<li><a href=""><i class="fa fa-hand-o-up" aria-hidden="true"></i></a></li>
+										<li><a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+									</ul>
+									<img src="img/card-1.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="card-custom-text">
+									<p>Пиджак темный</p>
+									<div class="price-new">
+										<span>1200 руб</span>
+										<h5>900 руб</h5>
+									</div>
+									<div class="card-size">
+										<h6>Размеры</h6>
+										<p><span>XS</span> <span>S</span> <span>M</span> <span>L</span> <span>XL</span> <span>XXL</span>
+										</p>
+									</div>
+								</div>
+								<ul class="card-custom-color">
+									<li class="card-custom-color-black" title="Черный"></li>
+									<li class="card-custom-color-blue" title="Синий"></li>
+									<li class="card-custom-color-pink" title="Розовый"></li>
+								</ul>
 							</div>
 						</div>
 					</div>
-			</div>
-		</section>
-		<div class="category-one">
-			<div class="row">
-				<div class="category-one-carousel owl-carousel">
-					<div class="">
-						<a href="">
-							<span>для мужчин</span>
-							<img src="img/category-one-1.jpg" class="img-fluid" alt="">
-						</a>
-					</div>
-					<div class="">
-						<a href="">
-							<span>для женщин</span>
-							<img src="img/category-one-2.jpg" class="img-fluid" alt="">
-						</a>
-					</div>
-					<div class="">
-						<a href="">
-							<span>для обоих</span>
-							<img src="img/category-one-3.jpg" class="img-fluid" alt="">
-						</a>
-					</div>
+					<ul class="pagination-custom">
+						<li><a href=""><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
+						<li><a href="">1</a></li>
+						<li><a href="">2</a></li>
+						<li><a href="" class="active">3</a></li>
+						<li><a href="">4</a></li>
+						<li><a href="">5</a></li>
+						<li><a href=""><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
-		<section class="category-two">
-			<div class="row">
-				<div class="col-lg-8 col-md-6">
-					<div class="row">
-						<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-							<a href="" class="item">
-								<span class="item-title">Walking pretty girl</span>
-								<img src="img/category-two-1.jpg" class="img-fluid" alt="">
-							</a>
-						</div>
-						<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 d-sm-block d-none">
-							<a href="" class="item">
-								<span class="item-title">Walking pretty girl</span>
-								<img src="img/category-two-1.jpg" class="img-fluid" alt="">
-							</a>
-						</div>
-						<div class="col-xl-3 col-lg-4 col-md-6 d-md-block d-sm-none d-none">
-							<a href="" class="item">
-								<span class="item-title">Walking pretty girl</span>
-								<img src="img/category-two-1.jpg" class="img-fluid" alt="">
-							</a>
-						</div>
-						<div class="col-xl-3 col-lg-4 col-md-6 d-md-block d-sm-none d-none">
-							<a href="" class="item">
-								<span class="item-title">Walking pretty girl</span>
-								<img src="img/category-two-1.jpg" class="img-fluid" alt="">
-							</a>
-						</div>
-						<div class="col-xl-3 col-lg-4 d-lg-block d-sm-none d-none">
-							<a href="" class="item">
-								<span class="item-title">Walking pretty girl</span>
-								<img src="img/category-two-1.jpg" class="img-fluid" alt="">
-							</a>
-						</div>
-						<div class="col-xl-3 col-lg-4 d-lg-block d-sm-none d-none">
-							<a href="" class="item">
-								<span class="item-title">Walking pretty girl</span>
-								<img src="img/category-two-1.jpg" class="img-fluid" alt="">
-							</a>
-						</div>
-						<div class="col-xl-3 col-lg-4 d-xl-block d-sm-none d-none">
-							<a href="" class="item">
-								<span class="item-title">Walking pretty girl</span>
-								<img src="img/category-two-1.jpg" class="img-fluid" alt="">
-							</a>
-						</div>
-						<div class="col-xl-3 col-lg-4 d-xl-block d-sm-none d-none">
-							<a href="" class="item">
-								<span class="item-title">Walking pretty girl</span>
-								<img src="img/category-two-1.jpg" class="img-fluid" alt="">
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="category-two-show">
-						<div>
-							<h4>тренды</h4>
-							<h3>Самые модные образы этого неповторимого сезона</h3>
-							<a href="" class="btn btn-black"><span>показать все</span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="banners">
-			<div class="row">
-				<div class="col-xl-5 col-lg-7 col-md-6 col-sm-12">
-					<div class="show-catalog">
-						<div>
-							<h4>коллекции</h4>
-							<h3>Твое время настало, дорогой друг!</h3>
-							<p>У каждого города есть свой рассказ, чувства, динамика, перекресток влияний, центр, где мужчины и
-								женщины
-								формируют настоящее и будущее</p>
-							<a href="" class="btn btn-white"><span>в каталог</span></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-4 col-lg-5 col-md-6 col-sm-4 d-md-block d-sm-none d-none">
-					<div class="img-wrap">
-						<img src="img/banner-1.jpg" class="img-fluid" alt="">
-					</div>
-				</div>
-				<div class="col-xl-3 d-xl-block d-sm-none d-none">
-					<img src="img/banner-2.jpg" class="img-fluid" alt="">
-				</div>
-			</div>
-		</section>
-		<section class="block-text">
-			<div class="row">
-				<div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
-					<h3>Интернет-магазин модной одежды Ramari</h3>
-					<p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum
-						используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное
-						распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст..
-						Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem
-						Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как
-						много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил
-						много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические
-						варианты).</p>
-					<h4>Самая главная фишка — только оригинал!</h4>
-					<p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum
-						используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное
-						распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст..
-						Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem
-						Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как
-						много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил
-						много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические
-						варианты).</p>
-				</div>
-			</div>
-		</section>
 		<footer class="footer">
 			<div class="footer-main">
 				<div class="row">
@@ -412,6 +757,7 @@
 
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 
