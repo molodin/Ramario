@@ -48,9 +48,37 @@ $(document).ready(function () {
     }
   });
 
+  $('.more-card-carousel').owlCarousel({
+    loop: 0,
+    margin: 30,
+    nav: 1,
+    navText: '',
+    dots: 0,
+    smartSpeed: 1000,
+    responsive: {
+      0: {
+        items: 1
+      },
+      640: {
+        items: 2
+      },
+      960: {
+        items: 3
+      },
+      1280: {
+        items: 4
+      },
+      1610: {
+        items: 5
+      },
+      1611: {
+        items: 6
+      }
+    }
+  });
+
   $('.top-carousel').owlCarousel({
     loop: 0,
-    items: 6,
     margin: 30,
     nav: 1,
     navText: '',
@@ -82,7 +110,6 @@ $(document).ready(function () {
     $('.header-main-nav').toggleClass('on');
     e.preventDefault();
   });
-
   $('.header-main-nav > li > a').on('click', function (e) {
     $('.header-main-nav-show').removeClass('on');
     $(this).next('.header-main-nav-show').addClass('on');
@@ -98,19 +125,53 @@ $(document).ready(function () {
 
   $('.select-custom').selectmenu();
 
-  $(window).on('resize load', function () {
-    if (window.matchMedia('(max-width: 1279px)').matches) {
-      $('.catalog-wrap').before($('.filter-catalog'));
-    } else {
-      $('.forFilterCatalogBefore').before($('.filter-catalog'));
-    };
-  });
-
   $('.filter-catalog-close').on('click', function () {
     $('.filter-catalog').removeClass('on');
   });
   $('.filter-show').on('click', function () {
     $('.filter-catalog').addClass('on');
+  });
+
+  $('.card-gallery').fotorama({
+    nav: 'thumbs',
+    width: '100%',
+    thumbborderwidth: 0,
+    arrows: false
+  });
+  var fotoramaAPI = $('.fotorama').data('fotorama');
+
+  $(window).on('resize load', function () {
+    if (window.matchMedia('(max-width: 1279px)').matches) {
+      $('.catalog-wrap').before($('.filter-catalog'));
+
+      fotoramaAPI.setOptions({
+        thumbwidth: 89,
+        thumbheight: 121,
+        thumbmargin: 20,
+      });
+    } else {
+      $('.forFilterCatalogBefore').before($('.filter-catalog'));
+
+      fotoramaAPI.setOptions({
+        thumbwidth: 126,
+        thumbheight: 171,
+        thumbmargin: 28,
+      });
+    };
+    if (window.matchMedia('(max-width: 959px)').matches) {
+      fotoramaAPI.setOptions({
+        thumbwidth: 130,
+        thumbheight: 176,
+        thumbmargin: 30,
+      });
+    };
+    if (window.matchMedia('(max-width: 959px)').matches) {
+      fotoramaAPI.setOptions({
+        thumbwidth: 65,
+        thumbheight: 88,
+        thumbmargin: 10,
+      });
+    };
   });
 
 });

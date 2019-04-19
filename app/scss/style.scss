@@ -62,6 +62,8 @@ serif;
 $ssp: 'Source Sans Pro',
 sans-serif;
 
+$blue: #0087f9;
+
 body {
   font-size: 16px;
   -size: 16px;
@@ -992,6 +994,7 @@ label {
     height: 25px;
     text-align: center;
     transform: rotate(45deg);
+
     &:after {
       position: absolute;
       top: 0;
@@ -1004,6 +1007,7 @@ label {
       height: 1px;
       background-color: #000;
     }
+
     &:before {
       position: absolute;
       top: 0;
@@ -1016,6 +1020,7 @@ label {
       background-color: #000;
     }
   }
+
   a h4 {
     color: #000;
     border-bottom: 3px solid #000;
@@ -1138,7 +1143,7 @@ label {
 
     a {
       text-decoration: none;
-      color: #b2b2b2;
+      color: #000;
     }
 
     &:last-child {
@@ -1147,9 +1152,9 @@ label {
       }
     }
 
-    &:first-child {
+    &:last-child {
       a {
-        color: #000;
+        color: #b2b2b2;
       }
     }
   }
@@ -1164,6 +1169,7 @@ label {
   font-weight: bold;
   font-size: 24px;
   line-height: 80px;
+  letter-spacing: .06em;
   background-color: #fafafa;
 }
 
@@ -1341,6 +1347,7 @@ label {
       font-size: 20px;
       letter-spacing: .06em;
       overflow: hidden;
+
       span {
         float: left;
         text-decoration: line-through;
@@ -1349,6 +1356,7 @@ label {
         letter-spacing: 0.06em;
         color: #b2b2b2;
       }
+
       h5 {
         margin-bottom: 10px;
         float: left;
@@ -1360,12 +1368,14 @@ label {
 
     .card-size {
       display: none;
+
       h6 {
         margin: 0 0 10px;
         font-family: $ssp;
         font-size: 18px;
         color: #b2b2b2;
       }
+
       p {
         margin-bottom: 10px;
         font-family: $bn;
@@ -1384,22 +1394,27 @@ label {
     padding: 5px 6px 0;
     background-color: #fff;
     overflow: hidden;
+
     li {
       float: left;
       margin-right: 14px;
       width: 16px;
       height: 16px;
       list-style: none;
+
       &:last-child {
         margin-right: 0;
       }
     }
+
     &-black {
       background: #000;
     }
+
     &-blue {
       background-color: #294c9f;
     }
+
     &-pink {
       background-color: #a500db;
     }
@@ -1415,13 +1430,16 @@ label {
         opacity: 1;
       }
     }
+
     .card-custom-text {
       top: -71px;
     }
+
     .card-size {
       display: block;
 
     }
+
     .card-custom-color {
       margin-top: -71px;
     }
@@ -1446,9 +1464,224 @@ label {
   }
 }
 
+.fotorama__thumb-border {
+  background: rgba(black, .5);
+}
+
+.card-page {
+  margin-top: 60px;
+
+  .fotorama__nav.fotorama__shadows--right:after,
+  .fotorama__stage.fotorama__shadows--right:after {
+    display: none;
+  }
+
+  .fotorama__nav.fotorama__shadows--left:before,
+  .fotorama__stage.fotorama__shadows--left:before {
+    display: none;
+  }
+
+  .breadcrumbs {
+    margin-bottom: 30px;
+  }
+
+  .card-gallery {
+    float: left;
+    margin-bottom: 150px;
+  }
+
+  .card-gallery {
+    width: 588px;
+  }
+
+  .card-info {
+    float: left;
+    margin-bottom: 60px;
+    width: 50%;
+    width: calc(100% - 588px);
+    padding-left: 90px;
+
+    .title {
+      margin-bottom: 60px;
+    }
+
+    &-main {
+      padding-left: 40px;
+
+      h4.price {
+        margin: 0 0 40px;
+        text-transform: uppercase;
+        font-family: $bn;
+        font-size: 34px;
+        color: $blue;
+      }
+
+      ul.card-info-list {
+        margin: 0 0 60px;
+        padding: 0;
+
+        li {
+          margin-bottom: 15px;
+          font-family: $ssp;
+          font-size: 18px;
+          line-height: 20px;
+          list-style: none;
+          color: #212121;
+          overflow: hidden;
+
+          span {
+            float: left;
+            display: table-cell;
+            padding-bottom: 5px;
+            padding-right: 5px;
+            font-family: $bn;
+            font-size: 20px;
+            font-weight: bold;
+            color: #000000;
+          }
+        }
+      }
+
+      h5 {
+        float: left;
+        margin: 0 0 25px;
+        font-family: $bn;
+        font-size: 20px;
+        font-weight: bold;
+        img {
+          margin-right: 10px;
+        }
+      }
+
+      ul.card-info-size {
+        margin: 0 0 70px;
+        padding: 0;
+
+        span {
+          float: left;
+          padding-right: 25px;
+          font-family: $bn;
+          font-size: 20px;
+          line-height: 40px;
+          font-weight: bold;
+          color: #000000;
+        }
+
+        li {
+          display: inline-block;
+          margin-right: 15px;
+          margin-bottom: 18px;
+          min-width: 40px;
+          height: 40px;
+          padding: 0 10px;
+          text-transform: uppercase;
+          font-family: $bn;
+          font-weight: bold;
+          text-align: center;
+          letter-spacing: .06em;
+          font-size: 20px;
+          line-height: 40px;
+          color: #000;
+          list-style: none;
+          border: 2px solid #eeeeee;
+          transition: all .3s;
+          cursor: pointer;
+
+          &:hover {
+            border-color: #000;
+          }
+
+          &.none {
+            color: #aeaeae;
+            cursor: default;
+
+            &:hover {
+              border-color: #eee;
+            }
+          }
+
+          &.active {
+            color: #fff;
+            background-color: #000;
+            border-color: #000;
+
+            &:hover {
+              color: #000;
+              background-color: #fff;
+            }
+          }
+        }
+      }
+
+      ul.card-info-share {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        h5 {
+          padding-right: 35px;
+          line-height: 40px;
+        }
+        li {
+          display: inline-block;
+          margin-right: 15px;
+          width: 40px;
+          height: 40px;
+          text-align: center;
+          font-size: 16px;
+          line-height: 40px - 4;
+          list-style: none;
+          border: 2px solid #eeeeee;
+          background-color: #eeeeee;
+          transition: all .3s;
+          i {
+            color: #aeaeae;
+            transition: all .3s;
+          }
+          a {
+            display: block;
+          }
+          &:hover {
+            background-color: #fff;
+            border-color: #000;
+            i {
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.more-card-carousel {
+  margin-top: 30px;
+  a {
+    img {
+      margin-bottom: 15px;
+      width: 100%;
+    }
+    p {
+      margin: 0 0 5px;
+      padding: 0 5px;
+      font-size: 18px;
+    }
+    h5 {
+      margin: 0;
+      padding: 0 5px;
+      font-family: $bn;
+      font-weight: bold;
+      font-size: 20px;
+      color: #000;
+    }
+  }
+}
+
 @media (max-width: 1609px) {
   .category-two-show {
     padding: 30px 50px;
+  }
+  .card-page .card-info {
+    padding-left: 30px;
   }
 }
 
@@ -1491,6 +1724,7 @@ label {
     font-size: 20px;
     line-height: 40px - 4;
     transition: all .3s;
+
     &:hover {
       color: #fff;
       background-color: #000;
@@ -1509,9 +1743,11 @@ label {
     border-left: none;
     overflow-y: auto;
     transition: left .6s;
+
     &.on {
       left: 0;
     }
+
     &-close {
       display: block;
     }
@@ -1526,10 +1762,18 @@ label {
       .card-custom-text {
         top: 0;
       }
+
       .card-custom-color {
         margin-top: 0;
       }
     }
+  }
+
+  .card-page .card-gallery {
+    width: 416px;
+  }
+  .card-page .card-info {
+    width: calc(100% - 416px);
   }
 }
 
@@ -1724,6 +1968,18 @@ label {
   .header-main-nav-btn .icon {
     margin-top: 21px;
   }
+
+  .card-page .card-gallery {
+    margin-bottom: 60px;
+    width: 100%;
+  }
+  .card-page .card-info {
+    width: 100%;
+    padding-left: 0;
+  }
+  .card-page .card-info {
+    margin-bottom: 110px;
+  }
 }
 
 @media (max-width: 639px) {
@@ -1823,9 +2079,11 @@ label {
   .catalog .pagination-custom {
     margin-top: 10px;
   }
+
   .pagination-custom {
     text-align: center;
   }
+
   .pagination-custom li {
     margin: 0;
   }
@@ -1833,6 +2091,7 @@ label {
   .catalog .sort h4 {
     display: none;
   }
+
   .ui-selectmenu-button.ui-button {
     width: 220px;
   }
@@ -1845,10 +2104,30 @@ label {
     width: 100%;
     border-right: none;
   }
+
   .filter-catalog h4 {
     font-size: 24px;
   }
+
   .filter-catalog .item-wrap ul {
     padding-left: 20px;
+  }
+
+  .card-gallery .fotorama__stage {
+    margin-bottom: 20px;
+  }
+  .card-page .card-info-main {
+    padding-left: 15px;
+  }
+  .card-page .card-info {
+    margin-bottom: 80px;
+  }
+  .card-page .card-info-main ul.card-info-size span, .card-page .card-info-main ul.card-info-share h5 {
+    display: block;
+    float: none;
+    padding-bottom: 10px;
+  }
+  .card-page .card-info-main ul.card-info-share h5 {
+    margin-bottom: 0;
   }
 }
