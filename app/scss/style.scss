@@ -105,7 +105,7 @@ p {
   color: #8b8b8b;
 }
 
-input[type="text"] {
+input[type=text] {
   margin: 0;
   height: 50px;
   padding: 0 15px;
@@ -116,6 +116,12 @@ input[type="text"] {
   outline: none;
   color: #000;
   background-color: #fff;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .btn {
@@ -391,6 +397,8 @@ label {
   padding-right: 50px;
   padding-left: 50px;
 }
+
+// Header
 
 .header {
   margin-bottom: 40px;
@@ -1126,7 +1134,7 @@ label {
 }
 
 .breadcrumbs {
-  margin: 0;
+  margin: 0 0 30px;
   padding: 0;
   overflow: hidden;
 
@@ -1165,7 +1173,7 @@ label {
   height: 80px;
   padding: 0 35px;
   text-transform: uppercase;
-  font-family: $bnb;
+  font-family: $bn;
   font-weight: bold;
   font-size: 24px;
   line-height: 80px;
@@ -1183,7 +1191,7 @@ label {
     margin-right: 20px;
     text-transform: uppercase;
     display: inline-block;
-    font-family: $bnb;
+    font-family: $bn;
     font-weight: bold;
     font-size: 20px;
   }
@@ -1548,6 +1556,7 @@ label {
         font-family: $bn;
         font-size: 20px;
         font-weight: bold;
+
         img {
           margin-right: 10px;
         }
@@ -1617,10 +1626,12 @@ label {
         margin: 0;
         padding: 0;
         overflow: hidden;
+
         h5 {
           padding-right: 35px;
           line-height: 40px;
         }
+
         li {
           display: inline-block;
           margin-right: 15px;
@@ -1633,16 +1644,20 @@ label {
           border: 2px solid #eeeeee;
           background-color: #eeeeee;
           transition: all .3s;
+
           i {
             color: #aeaeae;
             transition: all .3s;
           }
+
           a {
             display: block;
           }
+
           &:hover {
             background-color: #fff;
             border-color: #000;
+
             i {
               color: #000;
             }
@@ -1655,16 +1670,19 @@ label {
 
 .more-card-carousel {
   margin-top: 30px;
+
   a {
     img {
       margin-bottom: 15px;
       width: 100%;
     }
+
     p {
       margin: 0 0 5px;
       padding: 0 5px;
       font-size: 18px;
     }
+
     h5 {
       margin: 0;
       padding: 0 5px;
@@ -1676,10 +1694,203 @@ label {
   }
 }
 
+.basket {
+  .title {
+    margin-bottom: 70px;
+  }
+
+  .item {
+    position: relative;
+    margin-bottom: 40px;
+    min-height: 270px;
+    padding-bottom: 30px;
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+
+    img {
+      float: left;
+      width: 280px;
+    }
+
+    &-text {
+      display: table-cell;
+      padding-left: 30px;
+
+      .item-trash {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        transition: all .3s;
+        i {
+          font-size: 24px;
+          color: #aeaeae;
+          transition: all .3s;
+        }
+        &:hover {
+          i {
+            color: #000;
+          }
+        }
+      }
+
+      h4 {
+        width: 60%;
+        margin: 10px 0 45px;
+        text-transform: uppercase;
+        font-family: $bn;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+      }
+
+      ul {
+        margin: 0 0 20px;
+        padding: 0;
+
+        li {
+          margin-bottom: 5px;
+          font-family: $ssp;
+          font-size: 18px;
+          line-height: 20px;
+          list-style: none;
+          color: #212121;
+          overflow: hidden;
+
+          span {
+            float: left;
+            display: table-cell;
+            padding-bottom: 5px;
+            padding-right: 5px;
+            font-family: $bn;
+            font-size: 20px;
+            font-weight: bold;
+            color: #000000;
+          }
+        }
+      }
+
+      &-bottom {
+        position: absolute;
+        bottom: 30px;
+        width: calc(100% - 280px - 30px);
+        overflow: hidden;
+
+        .quantity {
+          position: absolute;
+          bottom: 0;
+          float: left;
+          width: 50%;
+          font-family: $bn;
+          font-weight: bold;
+
+          input {
+            float: left;
+            margin: 0 10px;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            font-size: 20px;
+            line-height: 36px;
+            font-weight: bold;
+            border: 2px solid #eee;
+            background-color: #fff;
+            color: #000;
+            outline: none;
+            transition: all .3s;
+          }
+
+          button {
+            float: left;
+            display: block;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            font-weight: bold;
+            border: 2px solid #eee;
+            background-color: #eee;
+            color: #aeaeae;
+            outline: none;
+            transition: all .3s;
+
+            &:hover {
+              color: #000;
+              border-color: #000;
+              background-color: #fff;
+            }
+          }
+        }
+
+        .item-sum {
+          float: right;
+          width: 50%;
+          padding-right: 20px;
+          text-align: right;
+
+          p {
+            margin: 0 0 5px;
+            font-size: 18px;
+            font-family: $ssp;
+            font-weight: 200;
+          }
+
+          h5 {
+            margin: 0;
+            font-family: $bn;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  &-info {
+    .btn {
+      margin-bottom: 20px;
+      width: 100%;
+    }
+    &-main {
+      margin-bottom: 40px;
+      padding: 25px 50px 45px;
+      background-color: #fafafa;
+      h4 {
+        margin: 0 0 30px;
+        padding-bottom: 15px;
+        font-family: $bn;
+        font-weight: bold;
+        font-size: 24px;
+        border-bottom: 1px solid #c8c8c8;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          margin-bottom: 15px;
+          font-family: $bn;
+          font-weight: bold;
+          font-size: 20px;
+          list-style: none;
+          span {
+            float: right;
+            font-family: $ssp;
+            font-weight: normal;
+            font-size: 18px;
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 1609px) {
   .category-two-show {
     padding: 30px 50px;
   }
+
   .card-page .card-info {
     padding-left: 30px;
   }
@@ -1772,8 +1983,17 @@ label {
   .card-page .card-gallery {
     width: 416px;
   }
+
   .card-page .card-info {
     width: calc(100% - 416px);
+  }
+
+  .basket-info .btn-wrap {
+    display: flex;
+    justify-content: space-between;
+    .btn {
+      width: calc((100% / 2) - 15px);
+    }
   }
 }
 
@@ -1973,12 +2193,25 @@ label {
     margin-bottom: 60px;
     width: 100%;
   }
+
   .card-page .card-info {
     width: 100%;
     padding-left: 0;
   }
+
   .card-page .card-info {
     margin-bottom: 110px;
+  }
+
+  .basket .item {
+    min-height: 350px;
+  }
+  .basket .item img {
+    width: 130px;
+  }
+  .basket .item-text h4 {
+    font-size: 20px;
+    line-height: 26px;
   }
 }
 
@@ -2116,18 +2349,53 @@ label {
   .card-gallery .fotorama__stage {
     margin-bottom: 20px;
   }
+
   .card-page .card-info-main {
     padding-left: 15px;
   }
+
   .card-page .card-info {
     margin-bottom: 80px;
   }
-  .card-page .card-info-main ul.card-info-size span, .card-page .card-info-main ul.card-info-share h5 {
+
+  .card-page .card-info-main ul.card-info-size span,
+  .card-page .card-info-main ul.card-info-share h5 {
     display: block;
     float: none;
     padding-bottom: 10px;
   }
+
   .card-page .card-info-main ul.card-info-share h5 {
     margin-bottom: 0;
+  }
+
+  .basket .item {
+    padding-bottom: 10px;
+  }
+  .basket .item img   {
+    float: none;
+  }
+  .basket .item-text {
+    position: relative;
+    display: block;
+    padding-top: 20px;
+    padding-left: 0;
+  }
+  .basket .item-text h4 {
+    width: 80%;
+  }
+  .basket-info-main {
+    padding: 25px;
+  }
+  .basket .item-text .item-trash {
+    top: 30px;
+    right: 5px;
+  }
+  .basket-info .btn-wrap {
+    display: block;
+    .btn {
+      width: 100%;
+      padding: 0;
+    }
   }
 }

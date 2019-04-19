@@ -140,6 +140,21 @@ $(document).ready(function () {
   });
   var fotoramaAPI = $('.fotorama').data('fotorama');
 
+  $('.quantity-plus').on('click', function () {
+    if ($(this).prev().val() < parseInt($(this).prev().attr('max'))) {
+      $(this).prev().val(+ $(this).prev().val() + 1);
+    };
+  });
+  $('.quantity-minus').on('click', function () {
+    if ($(this).next().val() > 1) {
+      if ($(this).next().val() > 1) $(this).next().val(+ $(this).next().val() - 1);
+    };
+  });
+
+  $(".basket-info").stick_in_parent({
+    offset_top: 40
+  });
+
   $(window).on('resize load', function () {
     if (window.matchMedia('(max-width: 1279px)').matches) {
       $('.catalog-wrap').before($('.filter-catalog'));
